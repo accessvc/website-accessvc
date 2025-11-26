@@ -24,7 +24,7 @@ const Achievements = () => {
             <p className="text-m text-muted-foreground">Across diverse sectors</p>
           </CardContent>
         </Card>
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <Card className="relative overflow-hidden border-border bg-black hover:shadow-[var(--card-hover-shadow)] transition-all duration-300">
             <CardContent className="relative z-10 p-6">
               <div className="text-2xl font-bold text-white mb-2">Valued Advisors</div>

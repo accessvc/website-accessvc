@@ -95,10 +95,10 @@ const Index = () => {
           <Card className="border-border bg-card mb-8 hover:shadow-[var(--card-hover-shadow)] transition-all duration-300">
             <CardContent className="p-0">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
-                <div className="flex items-center justify-center p-12 bg-muted/30">
+                <div className="flex items-center justify-center p-6 md:p-12 bg-muted/30">
                   <img src={partners[0].image} alt={partners[0].name} className="w-85 h-85 object-cover shadow-sm" />
                 </div>
-                <div className="flex flex-col justify-center p-12">
+                <div className="flex flex-col justify-center p-6 md:p-12">
                   <h3 className="text-3xl font-bold text-foreground mb-2">{partners[0].name}</h3>
                   <p className="text-lg font-medium text-accent mb-4">{partners[0].role}</p>
                   <p className="text-muted-foreground leading-relaxed">
@@ -111,11 +111,14 @@ const Index = () => {
             </CardContent>
           </Card>
 
-          {/* Partner 2 - Text Left, Image Right */}
+          {/* Partner 2 - Image Left, Text Right on md, Image Top Text Bottom on smaller screens */}
           <Card className="border-border bg-card hover:shadow-[var(--card-hover-shadow)] transition-all duration-300">
             <CardContent className="p-0">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
-                <div className="flex flex-col justify-center p-12 md:order-1">
+                <div className="flex items-center justify-center p-6 md:p-12 bg-muted/30 md:order-2">
+                  <img src={partners[1].image} alt={partners[1].name} className="w-85 h-85 object-cover shadow-sm" />
+                </div>
+                <div className="flex flex-col justify-center p-6 md:p-12 md:order-1">
                   <h3 className="text-3xl font-bold text-foreground mb-2">{partners[1].name}</h3>
                   <p className="text-lg font-medium text-accent mb-4">{partners[1].role}</p>
                   <p className="text-muted-foreground leading-relaxed">
@@ -123,9 +126,6 @@ const Index = () => {
                     {partners[1].bio}
                     <Quote size={20} className="inline-block ml-2 text-accent" style={{ transform: 'scaleX(-1)' }} />
                   </p>
-                </div>
-                <div className="flex items-center justify-center p-12 bg-muted/30 md:order-2">
-                  <img src={partners[1].image} alt={partners[1].name} className="w-85 h-85 object-cover shadow-sm" />
                 </div>
               </div>
             </CardContent>

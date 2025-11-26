@@ -5,7 +5,8 @@ const Footer = () => {
     <footer className="border-t border-border py-6 px-6 bg-black">
       <div className="container mx-auto max-w-6xl flex justify-between items-center">
         <p className="text-white">
-          © {new Date().getFullYear()} Access Ventures. All rights reserved.
+          © {new Date().getFullYear()} Access Ventures.<br />
+          All rights reserved.
         </p>
         <div className="flex space-x-4">
           <a href="mailto:team@accessvc.co" className="bg-white rounded-full p-2 text-black hover:bg-gray-200">

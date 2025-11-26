@@ -14,11 +14,11 @@ const Team = () => {
       <section className="pt-32 pb-20 px-6">
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-16 animate-fade-in">
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            <h1 className="text-3xl md:text-3xl font-bold text-foreground mb-6">
               Decades of extensive experience <br></br> in APAC and global markets
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-12">
-              Our team brings diverse backgrounds and extensive experience across the world from Silicon Valley to the Asia Pacific, with specific focus on Southeast Asia and South Korea 
+            <p className="text-base md:text-xl text-muted-foreground max-w-3xl mx-auto mb-12">
+              Our team brings diverse backgrounds and extensive experience across the world from Silicon Valley to the Asia Pacific, with specific focus on Southeast Asia and South Korea
             </p>
           </div>
 

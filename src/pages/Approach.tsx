@@ -61,17 +61,18 @@ const Approach = () => {
       <section className="pt-32 pb-20 px-6">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16 animate-fade-in">
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            <h1 className="text-3xl md:text-3xl font-bold text-foreground mb-6">
               Investment Approach
             </h1>
-            <p className="text-2xl text-muted-foreground max-w-3xl mx-auto">
-              We focus on creating a diversified portfolio based on <br></br> 
-              maturity stage, geography, and sector at early valuations
+            <p className="text-base md:text-2xl text-muted-foreground max-w-3xl mx-auto">
+              We focus on creating a diversified portfolio <br></br>
+              based on maturity stage, geography, and sector at early valuations
             </p>
           </div>
 
           {/* Investment Principles */}
           <div className="mb-20">
+            <hr className="border-black mb-8" />
             <h2 className="text-3xl font-bold text-foreground mb-8 text-center">Our Principles</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {principles.map((principle, index) => {
@@ -100,6 +101,7 @@ const Approach = () => {
 
           {/* Investment Stages */}
           <div className="mb-20">
+            <hr className="border-black mb-8" />
             <h2 className="text-3xl font-bold text-foreground mb-8 text-center">Investment Stages</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {stages.map((item, index) => (

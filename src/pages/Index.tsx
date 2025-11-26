@@ -76,11 +76,11 @@ const Index = () => {
       <section className="py-2 px-6 bg-muted/30">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            <h2 className="text-2xl md:text-2xl font-bold text-foreground mb-4">
               Founders are the Key to our Success
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              We’ve created a valuable network that supports our <br></br>unique deal flow and exit opportunities
+            <p className="text-lg text-muted-foreground max-w-xl mx-auto">
+              We’ve created a valuable network that supports our unique deal flow and exit opportunities
             </p>
           </div>
           <TestimonialCarousel />
@@ -88,7 +88,7 @@ const Index = () => {
       </section>
 
       {/* Partner Profiles */}
-      <section className="py-20 px-6">
+      <section className="py-10 md:py-20 px-6">
         <div className="container mx-auto max-w-6xl">
           
           {/* Partner 1 - Image Left, Text Right */}

@@ -86,7 +86,7 @@ const TestimonialCarousel = () => {
                       </div>
                     </div>
                     <p
-                      className="text-muted-foreground mb-6 italic leading-relaxed"
+                      className="text-muted-foreground mb-6 italic leading-relaxed text-sm sm:text-base"
                       dangerouslySetInnerHTML={{ __html: `"${item.testimony}"` }}
                     />
                   </CardContent>

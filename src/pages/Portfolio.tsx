@@ -616,21 +616,28 @@ const Portfolio = () => {
                   >
                     <Card className={`border-border bg-card ${company.website ? 'hover:shadow-lg cursor-pointer' : ''} transition-all duration-300`}>
                       <CardContent className="p-6">
-                        <div className="flex items-start gap-6">
+                        <div className="flex flex-col md:flex-row gap-4 md:gap-6">
+                          {/* Logo for mobile */}
                           <img
                             src={company.logo}
                             alt={`${company.name} logo`}
-                            className="w-28 h-24 object-contain flex-shrink-0"
+                            className="w-20 h-16 md:hidden object-contain mx-auto"
                           />
-                          <div className="flex-1">
+                          {/* Logo for desktop */}
+                          <img
+                            src={company.logo}
+                            alt={`${company.name} logo`}
+                            className="hidden md:block w-28 h-24 object-contain flex-shrink-0"
+                          />
+                          <div className="md:flex-1">
                             {/* Mobile Layout */}
                             <div className="block md:hidden mb-2">
-                              <h3 className="text-2xl font-bold text-foreground mb-2">{company.name}</h3>
-                              <div className="flex gap-2 mb-2">
+                              <h3 className="text-2xl font-bold text-foreground text-center mb-2">{company.name}</h3>
+                              <div className="flex justify-center gap-2 mb-2">
                                 <Badge variant="secondary">{company.country}</Badge>
                                 {company.exit && <Badge className="bg-green-500 text-white">{company.exit}</Badge>}
                               </div>
-                              <div className="flex flex-wrap gap-2">
+                              <div className="flex justify-center flex-wrap gap-2">
                                 {company.sectors.slice(0, 3).map((sector, idx) => (
                                   <Badge key={idx} variant="outline">{sector}</Badge>
                                 ))}
@@ -648,7 +655,7 @@ const Portfolio = () => {
                                 {company.exit && <Badge className="bg-green-500 text-white">{company.exit}</Badge>}
                               </div>
                             </div>
-                            <p className="text-muted-foreground mb-4 leading-relaxed">
+                            <p className="text-muted-foreground mt-4 mb-4 leading-relaxed">
                               {company.description}
                             </p>
                             <div className="text-sm text-muted-foreground">
